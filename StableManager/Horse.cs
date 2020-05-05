@@ -26,5 +26,10 @@ namespace StableManager
             YearOfBirth = yearOfBirth;
             DoesCompetition = doesCompetition;
         }
+
+        public bool Jump()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

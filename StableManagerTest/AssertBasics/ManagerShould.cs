@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using StableManager;
 using Xunit;
 
@@ -12,9 +11,11 @@ namespace StableManagerTest.AssertBasics
 
         public ManagerShould()
         {
-            _sut = new Manager();
-            _sut.Stables = new List<Stable>() {
+            _sut = new Manager
+            {
+                Stables = new List<Stable>() {
                 new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse())
+            }
             };
         }
 

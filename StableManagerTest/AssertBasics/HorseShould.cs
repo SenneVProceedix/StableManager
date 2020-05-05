@@ -27,7 +27,6 @@ namespace StableManagerTest
 
         //Assert with String:
         [Fact]
-        [Trait("ExampleType", "String")]
         public void UpdateName()
         {
             _sut.Name = "Ben X";
