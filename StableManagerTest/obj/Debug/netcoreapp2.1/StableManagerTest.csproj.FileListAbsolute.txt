@@ -1,0 +1,17 @@
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.deps.json
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.runtimeconfig.json
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.runtimeconfig.dev.json
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.pdb
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManager.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManager.pdb
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\obj\Debug\netcoreapp2.1\StableManagerTest.csprojAssemblyReference.cache
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\obj\Debug\netcoreapp2.1\StableManagerTest.csproj.CoreCompileInputs.cache
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\obj\Debug\netcoreapp2.1\StableManagerTest.AssemblyInfoInputs.cache
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\obj\Debug\netcoreapp2.1\StableManagerTest.AssemblyInfo.cs
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\obj\Debug\netcoreapp2.1\StableManagerTest.csproj.CopyComplete
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\obj\Debug\netcoreapp2.1\StableManagerTest.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\obj\Debug\netcoreapp2.1\StableManagerTest.pdb

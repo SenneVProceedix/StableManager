@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StableManager", "StableManager\StableManager.csproj", "{A6BD1FE3-97EE-4CB2-BE32-077CB91CBD9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StableManagerTest", "StableManagerTest\StableManagerTest.csproj", "{464D5F75-50C5-4FD9-B7E2-FFA267A35FB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6BD1FE3-97EE-4CB2-BE32-077CB91CBD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6BD1FE3-97EE-4CB2-BE32-077CB91CBD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6BD1FE3-97EE-4CB2-BE32-077CB91CBD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6BD1FE3-97EE-4CB2-BE32-077CB91CBD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464D5F75-50C5-4FD9-B7E2-FFA267A35FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464D5F75-50C5-4FD9-B7E2-FFA267A35FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464D5F75-50C5-4FD9-B7E2-FFA267A35FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464D5F75-50C5-4FD9-B7E2-FFA267A35FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE02EA24-A2CA-49EB-A093-BDB42F094698}
+	EndGlobalSection
+EndGlobal

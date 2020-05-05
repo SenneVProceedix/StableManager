@@ -1,0 +1,11 @@
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\bin\Debug\netcoreapp2.1\StableManager.deps.json
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\bin\Debug\netcoreapp2.1\StableManager.runtimeconfig.json
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\bin\Debug\netcoreapp2.1\StableManager.runtimeconfig.dev.json
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\bin\Debug\netcoreapp2.1\StableManager.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\bin\Debug\netcoreapp2.1\StableManager.pdb
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.csproj.CoreCompileInputs.cache
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.AssemblyInfoInputs.cache
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.AssemblyInfo.cs
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.pdb
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.csprojAssemblyReference.cache
