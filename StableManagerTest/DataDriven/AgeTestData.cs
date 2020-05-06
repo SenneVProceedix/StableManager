@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace StableManagerTest.DataDriven
 {
@@ -48,7 +46,7 @@ namespace StableManagerTest.DataDriven
         {
             get
             {
-                string[] csvLines = File.ReadAllLines("TestData.csv");
+                string[] csvLines = File.ReadAllLines("DataDriven/TestData.csv");
 
                 var testCases = new List<object[]>();
 

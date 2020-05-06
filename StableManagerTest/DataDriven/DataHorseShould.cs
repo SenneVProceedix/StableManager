@@ -51,5 +51,18 @@ namespace StableManagerTest.DataDriven
             _sut.YearOfBirth = yearOfBirth;
             Assert.Equal(expectedAge, _sut.Age);
         }
+
+        /**
+         * The test data is loaded in from a custom attribute create in the class: AgeDataAttribute.
+         * This test data is shared with DataEmployeeShould.CalculateAgeWithCustomAttribute.
+         * Note that the test explorer recognizes this as 4 tests after building.
+         */
+        [Theory]
+        [AgeData]
+        public void CalculateAgeWithCustomAttribute(int yearOfBirth, int expectedAge)
+        {
+            _sut.YearOfBirth = yearOfBirth;
+            Assert.Equal(expectedAge, _sut.Age);
+        }
     }
 }
