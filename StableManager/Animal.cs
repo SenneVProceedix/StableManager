@@ -4,6 +4,9 @@ using System.Text;
 
 namespace StableManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Animal
     {
     }
