@@ -5,13 +5,13 @@ using Xunit;
 
 namespace StableManagerTest.AssertBasics
 {
-    public class ManagerShould
+    public class FarmShould
     {
-        private Manager _sut;
+        private Farm _sut;
 
-        public ManagerShould()
+        public FarmShould()
         {
-            _sut = new Manager
+            _sut = new Farm
             {
                 Stables = new List<Stable>() {
                 new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse())

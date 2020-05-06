@@ -16,4 +16,10 @@
     <ProjectReference Include="..\StableManager\StableManager.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="DataDriven\TestData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

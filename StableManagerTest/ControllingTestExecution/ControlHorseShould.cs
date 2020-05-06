@@ -24,7 +24,7 @@ namespace StableManagerTest.ControllingTestExecution
         }
 
         //You can categorize test functions with the property [Trait]
-        //In Text Explorer, you can group by traits.
+        //In Test Explorer, you can group by traits.
         [Fact]
         [Trait("Category", "Name")]
         public void UpdateName()

@@ -1,6 +1,7 @@
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\DataDriven\TestData.csv
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.deps.json
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.runtimeconfig.json
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManagerTest\bin\Debug\netcoreapp2.1\StableManagerTest.runtimeconfig.dev.json

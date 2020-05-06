@@ -5,10 +5,11 @@ using System.Text;
 
 namespace StableManager
 {
-    public class Manager
+    public class Farm
     {
         public String Name { get; set; }
         public List<Stable> Stables { get; set; }
+        public Employee Employee { get; set; }
         public event EventHandler<EventArgs> NoEmptyStable;
         
         public Stable FindEmptyStable()
