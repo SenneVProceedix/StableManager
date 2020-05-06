@@ -1,6 +1,9 @@
 ﻿
 namespace StableManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Database
     {
         public static void Connect()

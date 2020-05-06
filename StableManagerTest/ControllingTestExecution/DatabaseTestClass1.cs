@@ -2,6 +2,9 @@
 
 namespace StableManagerTest.ControllingTestExecution
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Collection("Database Collection")]
     public class DatabaseTestClass1
     {

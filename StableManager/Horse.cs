@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace StableManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Horse : Animal
     {
         public String Name { get; set; }

@@ -6,6 +6,10 @@ namespace StableManagerTest.ControllingTestExecution
     /*
      *Defines the context that can be used with IClassFixture & ICollectionFixture
      */
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class DatabaseFixture : IDisposable
     {
         public DatabaseFixture()

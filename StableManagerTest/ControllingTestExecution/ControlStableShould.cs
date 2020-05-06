@@ -12,6 +12,10 @@ namespace StableManagerTest.ControllingTestExecution
      * If we didn't use a ClassFixture, this time intensive order would be executed before every test and greatly increase waiting time.
      * Be aware that with this setup, no test should be able to influence the outcome of another test.
      */
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class ControlStableShould : IClassFixture<DatabaseFixture>
     {
         private DatabaseFixture _fixture;

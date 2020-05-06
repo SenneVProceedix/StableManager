@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace StableManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Farm
     {
         public String Name { get; set; }
