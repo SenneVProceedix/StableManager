@@ -5,6 +5,9 @@ using Xunit.Abstractions;
 
 namespace StableManagerTest.ControllingTestExecution
 {
+    /// <summary>
+    /// 
+    /// </summary>
     //you can implement IDispose for a destructor function that will be called after every test
     public class ControlHorseShould : IDisposable
     {

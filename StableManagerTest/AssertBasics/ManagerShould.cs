@@ -5,6 +5,9 @@ using Xunit;
 
 namespace StableManagerTest.AssertBasics
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ManagerShould
     {
         private Manager _sut;

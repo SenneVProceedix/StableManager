@@ -5,6 +5,9 @@ using System.Text;
 
 namespace StableManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Manager
     {
         public String Name { get; set; }
