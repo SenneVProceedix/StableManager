@@ -5,6 +5,9 @@ using Xunit;
 
 namespace StableManagerTest.AssertBasics
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class FarmShould
     {
         private Farm _sut;

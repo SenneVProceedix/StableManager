@@ -4,6 +4,9 @@ using Xunit.Sdk;
 
 namespace StableManagerTest.DataDriven
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class AgeDataAttribute : DataAttribute
     {
         public override IEnumerable<object[]> GetData(MethodInfo testMethod)

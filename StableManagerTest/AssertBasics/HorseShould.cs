@@ -5,6 +5,9 @@ using Xunit;
 
 namespace StableManagerTest
 {
+    /// <summary>
+    /// 
+    /// </summary>
     //this test class contains a multitude of functionalities of Assert
     public class HorseShould
     {

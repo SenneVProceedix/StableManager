@@ -1,6 +1,9 @@
 ﻿
 namespace StableManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Stable
     {
         public Horse StableHorse { get; private set; }

@@ -2,6 +2,9 @@
 
 namespace StableManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Employee
     {
         public String Name { get; set; }

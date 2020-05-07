@@ -3,6 +3,9 @@ using StableManager;
 
 namespace StableManagerTest
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class StableShould
     {
         private Stable _sut;

@@ -3,6 +3,9 @@ using Xunit;
 
 namespace StableManagerTest.DataDriven
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class DataHorseShould
     {
         private Horse _sut;

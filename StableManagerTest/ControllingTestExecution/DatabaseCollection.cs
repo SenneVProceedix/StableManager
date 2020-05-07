@@ -9,6 +9,10 @@ namespace StableManagerTest.ControllingTestExecution
      * This single context will be used among all test of DatabaseTestClass1 & DatabaseTestClass2
      */
 
+    /// <summary>
+    /// 
+    /// </summary>
+
     [CollectionDefinition("Database Collection")]
     public class DatabaseCollection : ICollectionFixture<DatabaseFixture>
     {
