@@ -1,0 +1,66 @@
+﻿<div class="card">
+    <div class="card-header">
+        Detail: {{stable.name}}
+    </div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2">
+                        Name:
+                    </div>
+                    <div class="col-md-6">
+                        {{stable.name}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Size:
+                    </div>
+                    <div class="col-md-6">
+                        {{stable.size}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Type:
+                    </div>
+                    <div class="col-md-6">
+                        {{stable.type}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Bedding
+                    </div>
+                    <div class="col-md-6">
+                        {{stable.bedding}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Cost:
+                    </div>
+                    <div class="col-md-6">
+                        {{stable.cost | currency: "€"}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Price:
+                    </div>
+                    <div class="col-md-6">
+                        {{stable.price | currency: "€"}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img ng-src="{{stable.url}}" style="height: 300px; width: auto;" />
+            </div>
+        </div>
+    </div>
+        <div class="card-footer">
+            <button class="btn btn-primary" ui-sref="stablesList">Back</button>
+            <button class="btn btn-primary" ui-sref="stableEdit.info({id: stable.id})">Edit</button>
+        </div>
+</div>

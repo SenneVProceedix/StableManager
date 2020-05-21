@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Rent Stable</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="scripts/jquery-3.0.0.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel=" stylesheet" href="css/ui-bootstrap-csp.css" />
+    <link rel="stylesheet" href="css/toastr.css" />
+
+    <!--Angular-->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-resource.js"></script>
+    <script src="scripts/angular-mocks.js"></script>
+    <script src="scripts/angular-ui-router.js"></script>
+    <script src="scripts/ui-utils.js"></script>
+    <script src="scripts/ui-bootstrap-tpls.js"></script>
+    <script src="scripts/toastr.js"></script>
+    <script src="scripts/Chart.js"></script>
+    <script src="scripts/angular-chart.js"></script>
+
+    <!--Aplication-->
+    <script src="app/app.js"></script>
+
+    <!--Services-->
+    <script src="service/common.js"></script>
+    <script src="service/stableResource.js"></script>
+    <script src="service/stableResourceMock.js"></script>
+    <script src="service/productService.js"></script>
+
+    <!--Controllers-->
+    <script src="app/stable/stableListController.js"></script>
+    <script src="app/stable/stableDetailController.js"></script>
+    <script src="app/stable/stableEditController.js"></script>
+    <script src="app/price/priceAnalyticController.js"></script>
+</head>
+<body ng-app="stableManager">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="stablesList">Stables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="stableEdit.info({id:0})">Add Stable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="priceAnalytic">Price</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div ui-view class="container"></div>
+</body>
+</html>

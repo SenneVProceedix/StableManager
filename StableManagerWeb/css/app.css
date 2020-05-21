@@ -1,0 +1,9 @@
+﻿body {
+}
+
+.wizard{
+    background: #efefef;
+    min-width: 150px;
+    padding: 10px, 40px, 10px;
+    margin-right: 5px;
+}

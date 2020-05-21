@@ -1,0 +1,63 @@
+﻿<form name="stableForm" novalidate>
+    <legend class="mt-2">Stable Info</legend>
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="name">*Name: </label>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" id="name" name="name" ng-model="stable.name" class="form-control" ng-minlength="4" ng-maxlength="20" required
+                   ng-class="{'is-invalid' : stableForm.name.$invalid && stableForm.name.$dirty}"/>
+        </div>
+        <span class="col-sm-4 text-danger" ng-show="stableForm.name.$dirty">
+            <span ng-show="stableForm.name.$error.required">name is required</span>
+            <span ng-show="stableForm.name.$error.minlength">The minimum length is 4 characters</span>
+            <span ng-show="stableForm.name.$error.maxlength">The maximum length is 20 characters</span>
+        </span>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="size">*Size: </label>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" id="size" name="size" ui-mask="9x9" ng-model="stable.size" class="form-control" required 
+                   ng-class="{'is-invalid' : stableForm.size.$invalid && stableForm.size.$dirty}"/>
+        </div>
+        <span class="col-sm-4 text-danger" ng-show="stableForm.size.$dirty">
+            <span ng-show="stableForm.size.$error.required">name is required</span>
+        </span>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="date">Construction Date: </label>
+        </div>
+        <div class="col-sm-6">
+            <div class="input-group">
+                <input type="text" 
+                       id="date" 
+                       ng-model="stable.constructionDate" 
+                       class="form-control" 
+                       uib-datepicker-popup="dd/MM/yyyy" 
+                       is-open="date.opened"/>
+
+                <span><button class="btn btn-light" ng-click="open($event)"><i class="fa fa-calendar-check" aria-hidden="true"></i></button></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="type">Type: </label>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" id="type" ng-model="stable.type" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="bedding">Bedding: </label>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" id="bedding" ng-model="stable.bedding" class="form-control" />
+        </div>
+    </div>
+    <button class="btn btn-primary" ng-click="save()" ng-disabled="stableForm.$invalid">Save</button>
+</form>

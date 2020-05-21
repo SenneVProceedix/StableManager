@@ -11,7 +11,7 @@ namespace StableManagerTest.DataDriven
     {
         /*
          * method one:
-        private static List<object[]> InternalData = new List<object[]>
+        private static List<object[]> InternalData = new List<object[]> 
         {
             new object[] {2015, 5},
             new object[] {2000, 20},

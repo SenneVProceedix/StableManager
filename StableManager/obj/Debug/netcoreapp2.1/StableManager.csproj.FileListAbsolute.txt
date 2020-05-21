@@ -8,3 +8,4 @@ C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netco
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.AssemblyInfo.cs
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.dll
 C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.pdb
+C:\Users\sennevervaecke\Source\Repos\StableManager\StableManager\obj\Debug\netcoreapp2.1\StableManager.csprojAssemblyReference.cache

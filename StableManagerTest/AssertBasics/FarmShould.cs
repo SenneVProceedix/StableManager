@@ -17,8 +17,8 @@ namespace StableManagerTest.AssertBasics
             _sut = new Farm
             {
                 Stables = new List<Stable>() {
-                new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse())
-            }
+                    new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse())
+                }
             };
         }
 

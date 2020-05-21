@@ -1,0 +1,26 @@
+﻿<div class="card">
+    <div class="card-header">Stable For Rent</div>
+    <table class="table">
+        <tr>
+            <th>
+                Image
+                <button class="btn btn-info" ng-click="toggleImage()">{{hideImage ? "show" : "hide"}}</button>
+            </th>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Type</th>
+            <th>Bedding</th>
+            <th>Price</th>
+        </tr>
+        <tr ng-repeat="stable in stables">
+            <td>
+                <img ng-if="!hideImage" ng-src="{{stable.url}}" style="height: 100px; width: auto;" />
+            </td>
+            <td><a ui-sref="stableDetail({id: stable.id})">{{stable.name}}</a></td>
+            <td>{{stable.size}} m²</td>
+            <td>{{stable.type}}</td>
+            <td>{{stable.bedding}}</td>
+            <td>{{stable.price | currency: "€"}}</td>
+        </tr>
+    </table>
+</div>
