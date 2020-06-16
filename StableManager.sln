@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StableManagerTest", "Stable
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StableManagerWeb", "StableManagerWeb\StableManagerWeb.csproj", "{0E05BDEC-120D-4403-8270-7A67929F7729}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StableManagerAPI", "StableManagerAPI\StableManagerAPI.csproj", "{163F1326-F59A-46E0-9460-4AB316740EE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0E05BDEC-120D-4403-8270-7A67929F7729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E05BDEC-120D-4403-8270-7A67929F7729}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E05BDEC-120D-4403-8270-7A67929F7729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163F1326-F59A-46E0-9460-4AB316740EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163F1326-F59A-46E0-9460-4AB316740EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163F1326-F59A-46E0-9460-4AB316740EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163F1326-F59A-46E0-9460-4AB316740EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

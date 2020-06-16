@@ -11,7 +11,7 @@ namespace StableManagerTest.CodeExampleDoc
         public ExampleHorseShould(ITestOutputHelper output)
         {
             _output = output;
-            _sut = new Horse("Qornet", null, null, 2016, false);
+            _sut = new Horse("Qornet", 2016);
             _output.WriteLine("Horse is created");
         }
 

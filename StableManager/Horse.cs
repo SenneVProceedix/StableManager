@@ -14,20 +14,18 @@ namespace StableManager
         public int YearOfBirth { get; set; }
         public Boolean DoesCompetition { get; set; }
         //For the sake of simplicity, everyones birthday is the first of january and it is always 2020.
-        public int Age { get => 2020 - YearOfBirth; }
-        public List<String> Injuries { get; set; }
+        public int Age => 2020 - YearOfBirth;
+        public ICollection<String> Injuries { get; set; }
 
         public Horse()
         {
         }
 
-        public Horse(String name, Horse father, Horse mother, int yearOfBirth, Boolean doesCompetition)
+        public Horse(String name, int yearOfBirth)
         {
             Name = name;
-            Father = father;
-            Mother = mother;
             YearOfBirth = yearOfBirth;
-            DoesCompetition = doesCompetition;
+            DoesCompetition = false;
         }
 
         public bool Jump()

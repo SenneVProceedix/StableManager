@@ -10,21 +10,18 @@ namespace StableManager
     public class Farm
     {
         public String Name { get; set; }
-        public List<Stable> Stables { get; set; }
+        public ICollection<Stable> Stables { get; set; }
         public Employee Employee { get; set; }
-        public event EventHandler<EventArgs> NoEmptyStable;
+        public event EventHandler<EventArgs> NoEmptyStableFound;
         
         public Stable FindEmptyStable()
         {
-            for(int i = 0; i < Stables.Count; i++)
+            Stable result = Stables.FirstOrDefault(stable => stable.StableHorse == null);
+            if (result == null)
             {
-                if(Stables.ElementAt(i) == null)
-                {
-                    return Stables.ElementAt(i);
-                }
+                NoEmptyStableFound(this, new EventArgs());
             }
-            NoEmptyStable(this, new EventArgs());
-            return null;
+            return result;
         }
     }
 }

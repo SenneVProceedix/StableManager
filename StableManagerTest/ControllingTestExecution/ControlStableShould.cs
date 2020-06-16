@@ -25,7 +25,7 @@ namespace StableManagerTest.ControllingTestExecution
         public ControlStableShould(DatabaseFixture databaseFixture)
         {
             _fixture = databaseFixture;
-            _sut = new Stable(3, 3, null);
+            _sut = new Stable(3, 3);
         }
 
         [Fact]

@@ -11,7 +11,8 @@ namespace StableManagerTest
         private Stable _sut;
         public StableShould()
         {
-            _sut = new Stable(3, 3, new Horse());
+            _sut = new Stable(3, 3);
+            _sut.PutHorseInStable(new Horse());
 
         }
 

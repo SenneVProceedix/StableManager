@@ -33,14 +33,17 @@
     <script src="service/stableResource.js"></script>
     <script src="service/stableResourceMock.js"></script>
     <script src="service/productService.js"></script>
+    <script src="service/userResource.js"></script>
+    <script src="service/currentUser.js"></script>
 
     <!--Controllers-->
     <script src="app/stable/stableListController.js"></script>
     <script src="app/stable/stableDetailController.js"></script>
     <script src="app/stable/stableEditController.js"></script>
     <script src="app/price/priceAnalyticController.js"></script>
+    <script src="app/mainController.js"></script>
 </head>
-<body ng-app="stableManager">
+<body ng-app="stableManager" ng-controller="mainController">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +67,18 @@
             </ul>
         </div>
     </nav>
-    <div ui-view class="container"></div>
+
+    <form class="form-inline float-right mt-2" ng-if="!isLoggedIn()">
+        <div class="form-group  mr-2">
+            <input type="text" class="form-control" placeholder="Email" ng-model="user.email" />
+        </div>
+        <div class="form-group mr-2">
+            <input type="password" class="form-control" placeholder="Password" ng-model="user.password" />
+        </div>
+        <button class="btn btn-info mr-2" ng-click="login()">Login</button>
+        <button class="btn btn-info mr-4" ng-click="register()">Register</button>
+    </form>
+
+    <div ng-if="isLoggedIn()" ui-view class="container"></div>
 </body>
 </html>

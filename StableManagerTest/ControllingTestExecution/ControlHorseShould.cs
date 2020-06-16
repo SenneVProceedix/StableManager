@@ -20,7 +20,7 @@ namespace StableManagerTest.ControllingTestExecution
         public ControlHorseShould(ITestOutputHelper output)
         {
             _output = output;
-            _sut = new Horse("Jeno", null, null, 2001, true);
+            _sut = new Horse("Jeno", 2001);
             
             //you can find this line in Test Explorer when you click on a test and then on output.
             _output.WriteLine("a new horse is created");

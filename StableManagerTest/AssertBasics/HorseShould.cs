@@ -17,7 +17,8 @@ namespace StableManagerTest
         //Centralize Arrange code in constructor
         public HorseShould()
         {
-            _sut = new Horse("Jeno", null, null, 2001, true);
+            _sut = new Horse("Jeno", 2001) { DoesCompetition = true };
+          
         }
 
 

@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "Name": "Field With Stable",
+    "Url": "Image/field.jpg",
+    "Width": 4,
+    "Length": 3,
+    "Type": "half pension",
+    "Bedding": "straw",
+    "ConstructionDate": "2015-10-10T00:00:00",
+    "Cost": 100.0,
+    "Price": 250.0
+  },
+  {
+    "Id": 2,
+    "Name": "Horse Standard Stable",
+    "Url": "Image/stable1.jpg",
+    "Width": 3,
+    "Length": 3,
+    "Type": "half pension",
+    "Bedding": "straw",
+    "ConstructionDate": "2015-10-10T00:00:00",
+    "Cost": 200.0,
+    "Price": 300.0
+  },
+  {
+    "Id": 3,
+    "Name": "Horse Luxury Stable",
+    "Url": "Image/stable2.jpg",
+    "Width": 3,
+    "Length": 4,
+    "Type": "full pension",
+    "Bedding": "straw",
+    "ConstructionDate": "2015-10-10T00:00:00",
+    "Cost": 450.0,
+    "Price": 650.0
+  },
+  {
+    "Id": 4,
+    "Name": "Pony Standard Stable",
+    "Url": "",
+    "Width": 2,
+    "Length": 2,
+    "Type": "full pension",
+    "Bedding": "shaving",
+    "ConstructionDate": "2015-10-10T00:00:00",
+    "Cost": 320.0,
+    "Price": 500.0
+  },
+  {
+    "Id": 5,
+    "Name": "Pony Luxury Stable",
+    "Url": "",
+    "Width": 3,
+    "Length": 3,
+    "Type": "full pension",
+    "Bedding": "shaving",
+    "ConstructionDate": "2015-10-10T00:00:00",
+    "Cost": 400.0,
+    "Price": 650.0
+  },
+  {
+    "Id": 6,
+    "Name": "Field17",
+    "Url": null,
+    "Width": 0,
+    "Length": 0,
+    "Type": "half pension",
+    "Bedding": "straw",
+    "ConstructionDate": "2020-05-07T22:00:00Z",
+    "Cost": 0.0,
+    "Price": 0.0
+  }
+]

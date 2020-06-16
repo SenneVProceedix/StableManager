@@ -39,10 +39,29 @@
             $scope.date.opened = !$scope.date.opened;
         };
 
+        var errorHandling = function (response) {
+            toastr.error(response.statusText);
+            if (response.data.modelState) {
+                for (var key in response.data.modelState) {
+                    toastr.error(response.data.modelState[key]);
+                }
+            }
+            if (response.data.exceptionMessage) {
+                toastr.error(response.data.exceptionMessage);
+            }
+        };
+
         $scope.open = open;
 
-        $scope.stable = stable;
-        $scope.stable.constructionDate = Date.parse($scope.stable.constructionDate);
+        if (stable.status && stable.status !== 200) {
+            console.log(stable);
+            errorHandling(stable);
+        } else {
+            $scope.stable = stable;
+            $scope.stable.constructionDate = Date.parse($scope.stable.constructionDate);
+            $scope.stable.size = stable.length + "x" + stable.width;
+            console.log($scope.stable);
+        }
 
         if (stable && stable.id) {
             $scope.title = "Edit " + stable.name;
@@ -52,9 +71,27 @@
 
         $scope.save = function () {
             console.log("save called");
-            $scope.stable.$save(function () {
-                toastr.success("Stable saved");
-            });
+            $scope.stable.length = $scope.stable.size[0];
+            $scope.stable.width = $scope.stable.size[$scope.stable.size.length - 1];
+            $scope.stable.constructionDate = new Date($scope.stable.constructionDate).toISOString();
+
+            if ($scope.stable.id) {
+                $scope.stable.$update({ id: $scope.stable.id }, function (data) {
+                    $scope.stable = data;
+                    $scope.stable.constructionDate = Date.parse($scope.stable.constructionDate);
+                    $scope.stable.size = data.length + "x" + data.width;
+                    toastr.success("Stable Updated");
+                    console.log($scope.stable);
+                }, errorHandling);
+            } else {
+                $scope.stable.$save(function (data) {
+                    $scope.stable = data;
+                    $scope.stable.constructionDate = Date.parse($scope.stable.constructionDate);
+                    $scope.stable.size = data.length + "x" + data.width;
+                    toastr.success("New Stable Created");
+                    console.log($scope.stable);
+                }, errorHandling);
+            }
         };
     };
 

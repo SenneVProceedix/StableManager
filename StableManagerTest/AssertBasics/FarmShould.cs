@@ -14,11 +14,18 @@ namespace StableManagerTest.AssertBasics
 
         public FarmShould()
         {
+            Stable stable1 = new Stable(3, 3);
+            stable1.PutHorseInStable(new Horse());
+            Stable stable2 = new Stable(3, 3);
+            stable2.PutHorseInStable(new Horse());
+            Stable stable3 = new Stable(3, 3);
+            stable3.PutHorseInStable(new Horse());
             _sut = new Farm
             {
                 Stables = new List<Stable>() {
-                    new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse()), new Stable(3 ,3 , new Horse())
+                    stable1, stable2, stable3
                 }
+
             };
         }
 
@@ -27,9 +34,9 @@ namespace StableManagerTest.AssertBasics
         public void RaiseEventWhenNoEmptyStable()
         {
             Assert.Raises<EventArgs>(
-                handler => _sut.NoEmptyStable += handler, //attach handler
-                handler => _sut.NoEmptyStable -= handler, //detach handler
-                () => _sut.FindEmptyStable());            //function that shoud raise the event
+                handler => _sut.NoEmptyStableFound += handler, //attach handler
+                handler => _sut.NoEmptyStableFound -= handler, //detach handler
+                () => _sut.FindEmptyStable());                 //function that shoud raise the event
         }
     }
 }

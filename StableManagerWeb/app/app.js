@@ -1,6 +1,14 @@
 ﻿(function () {
 
-    var app = angular.module("stableManager", ["common.services", "stableResourceMock", "ui.router", "ui.mask", "ui.bootstrap", "chart.js"]);
+    var app = angular.module("stableManager", [
+        "common.services",
+        //"stableResourceMock",
+        "ui.router",
+        "ui.mask",
+        "ui.bootstrap",
+        "chart.js"
+    ]);
+        
 
     var routing = function ($stateProvider, $urlRouterProvider) {
 
@@ -9,7 +17,10 @@
         $stateProvider.state("stablesList", {
             url: "/stables",
             templateUrl: "App/Stable/StableListView.html",
-            controller: "stableListController"
+            controller: "stableListController",
+            data: {
+
+            }
         })
             .state("priceAnalytic", {
                 url: "/price",
@@ -38,9 +49,21 @@
                 templateUrl: "App/Stable/StableEditView.html",
                 controller: "stableEditController",
                 resolve: {
+                    authenticate: function (currentUser) {
+                        if (!currentUser.getProfile().isLoggedIn) {
+                            throw "not authorized";
+                        }
+                    },
                     stableResource: "stableResource",
                     stable: function (stableResource, $stateParams) {
-                        return stableResource.get({ id: $stateParams.id }).$promise;
+                            return stableResource.get({ id: $stateParams.id }).$promise.then(
+                                function (stable) {
+                                    return stable;
+                                },
+                                function (error) {
+                                    return error;
+                                }
+                            );
                     }
                 }
             })
@@ -66,9 +89,26 @@
                 controller: "stableDetailController",
                 
                 resolve: {
+                    authenticate: function (currentUser) {
+                        if (!currentUser.getProfile().isLoggedIn) {
+                            throw "not authorized";
+                        }
+                    },
                     stableResource: "stableResource",
-                    stable: function (stableResource, $stateParams) {
-                        return stableResource.get({ id: $stateParams.id }).$promise;
+                    stable: function (stableResource, $stateParams, $location) {
+                        return stableResource.get({ id: $stateParams.id }).$promise.then(
+                            function (response) {
+                                console.log(response);
+                                return response;
+                            },
+                            function (response) {
+                                console.log(response);
+                                if (response.status === 401) {
+                                    $location.path("/");
+                                }
+                                return response;
+                            }
+                        );
                     }
                 }
             });
